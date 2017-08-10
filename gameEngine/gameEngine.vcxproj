@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E7143516-4163-4876-A93D-FF4645537FB3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>renderer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\include;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\include;C:\Users\jannm\Documents\c++Libs\glm\;C:\Users\jannm\Documents\c++Libs\assimp\include;C:\Users\jannm\Documents\c++Libs\freetype-2.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\lib\Release\Win32;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\lib-vc2015;C:\Users\jannm\Documents\c++Libs\assimp\lib;C:\Users\jannm\Documents\c++Libs\freetype-2.8\objs\vc2010\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;assimp-vc140-mt.lib;freetype28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\include;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\include;C:\Users\jannm\Documents\c++Libs\glm\;C:\Users\jannm\Documents\c++Libs\assimp\include;C:\Users\jannm\Documents\c++Libs\freetype-2.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\lib\Release\Win32;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\lib-vc2015;C:\Users\jannm\Documents\c++Libs\assimp\lib;C:\Users\jannm\Documents\c++Libs\freetype-2.8\objs\vc2010\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;assimp-vc140-mt.lib;freetype28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\include;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\include;C:\Users\jannm\Documents\c++Libs\glm\;C:\Users\jannm\Documents\c++Libs\assimp\include;C:\Users\jannm\Documents\c++Libs\freetype-2.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\lib\Release\Win32;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\lib-vc2015;C:\Users\jannm\Documents\c++Libs\assimp\lib;C:\Users\jannm\Documents\c++Libs\freetype-2.8\objs\vc2010\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;assimp-vc140-mt.lib;freetype28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\include;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\include;C:\Users\jannm\Documents\c++Libs\glm\;C:\Users\jannm\Documents\c++Libs\assimp\include;C:\Users\jannm\Documents\c++Libs\freetype-2.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\jannm\Documents\c++Libs\glew-2.0.0\lib\Release\Win32;C:\Users\jannm\Documents\c++Libs\glfw-3.2.1.bin.WIN32\lib-vc2015;C:\Users\jannm\Documents\c++Libs\assimp\lib;C:\Users\jannm\Documents\c++Libs\freetype-2.8\objs\vc2010\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;assimp-vc140-mt.lib;freetype28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="FPSCamera.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="LodePNG.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="MousePicker.cpp" />
+    <ClCompile Include="ObjLoader.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ShaderBase.cpp" />
+    <ClCompile Include="SimpleShader.cpp" />
+    <ClCompile Include="stb_image.cpp" />
+    <ClCompile Include="TerrainManager.cpp" />
+    <ClCompile Include="TerrainMeshGenerator.cpp" />
+    <ClCompile Include="TerrainRenderer.cpp" />
+    <ClCompile Include="TerrainShader.cpp" />
+    <ClCompile Include="TextureBase.cpp" />
+    <ClCompile Include="TexturedModel.cpp" />
+    <ClCompile Include="TextureLoader.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="FPSCamera.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="LodePNG.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="MousePicker.h" />
+    <ClInclude Include="ObjLoader.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ShaderBase.h" />
+    <ClInclude Include="SimpleShader.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="TerrainManager.h" />
+    <ClInclude Include="TerrainMeshGenerator.h" />
+    <ClInclude Include="TerrainRenderer.h" />
+    <ClInclude Include="TerrainShader.h" />
+    <ClInclude Include="TextureBase.h" />
+    <ClInclude Include="TexturedModel.h" />
+    <ClInclude Include="TextureLoader.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
